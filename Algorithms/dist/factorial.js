@@ -8,7 +8,7 @@ function factorial(n) {
     }
     console.log(r);
 }
-factorial(5); // 120 
+factorial(5); // 120
 // Calcualtion not dependent on input size - O(1)
 // loop - O(n)
 // nested loop - O(n^2)
