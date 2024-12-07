@@ -1,10 +1,9 @@
 // BinarySearch //
 /* Get the index of the X */
 
-const BinarySearch: (x:number) => number = (x) => {
-    
-    let res=0;
-    let A=[-5, 2, 10, 4, 6]
+const BinarySearch: (x:number, arr:number[]) => number = (x, arr) => {
+
+    let A=arr;
     A.sort((a, b) => a - b);
     console.log(A);
     let left=0, right=A.length-1;
@@ -18,9 +17,9 @@ const BinarySearch: (x:number) => number = (x) => {
 
 }
     
-    console.log(BinarySearch(10)); //2
-    console.log(BinarySearch(6)); //4
-    console.log(BinarySearch(20)); //-1
+    console.log(BinarySearch(10, [ -5, 2, 4, 6, 10 ])); //4
+    console.log(BinarySearch(6, [ -5, 2, 4, 6, 10 ])); //3
+    console.log(BinarySearch(20, [ -5, 2, 4, 6, 10 ])); //-1
     
     // Calcualtion not dependent on input size - O(1)
     // loop - O(n)
